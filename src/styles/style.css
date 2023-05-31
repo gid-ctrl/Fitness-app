@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* NavBar styles */
+nav {
+  background-color: #4b0082;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.home {
+  text-align: center;
+}
+
+.exercise-selection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.exercise-selection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.exercise-selection li {
+  margin-bottom: 10px;
+}
+
+.exercise-selection button {
+  padding: 10px 20px;
+  background-color: #9400d3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.workout-tracking form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.workout-tracking form div {
+  margin-bottom: 20px;
+}
+
+.workout-tracking label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.workout-tracking input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.workout-tracking h3 {
+  margin-top: 30px;
+}
+
+.summary {
+  margin-top: 20px;
+  background-color: #4b0082;
+  padding: 10px;
+}
