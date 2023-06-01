@@ -1,8 +1,8 @@
 import React from "react";
-import NavBar from "./components/navbar";
-import Home from "./pages/homepage";
+import NavBar from "./components/Navbar";
+import Home from "./pages/Homepage";
 import "./styles/style.css";
-import ExerciseSelection from "./pages/exercises";
+import ExerciseSelection from "./pages/Exercises";
 const App = () => {
   return (
     <div>

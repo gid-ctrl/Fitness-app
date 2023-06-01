@@ -8,17 +8,17 @@ const Greeting = () => {
     let updatedGreeting = "";
 
     if (currentHour >= 5 && currentHour < 12) {
-      updatedGreeting = "Good Morning";
+      updatedGreeting = "Good Morning!";
     } else if (currentHour >= 12 && currentHour < 18) {
-      updatedGreeting = "Good Afternoon";
+      updatedGreeting = "Good Afternoon!";
     } else {
-      updatedGreeting = "Good Evening";
+      updatedGreeting = "Good Evening!";
     }
 
     setGreeting(updatedGreeting);
   }, []);
 
-  return <h1>{greeting}! Welcome back! </h1>;
+  return <h1>{greeting} Welcome back! </h1>;
 };
 
 export default Greeting;
