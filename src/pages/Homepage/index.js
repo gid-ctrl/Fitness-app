@@ -5,7 +5,11 @@ const Home = () => {
   return (
     <div>
       <Greeting />
-      <p>Track and manage your fitness activities.</p>
+      <h3>Welcome Back</h3>
+      <br />
+      <p>Sweat</p>
+      <p>Succeed</p>
+      <p>Smile</p>
     </div>
   );
 };

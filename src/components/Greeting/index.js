@@ -18,7 +18,7 @@ const Greeting = () => {
     setGreeting(updatedGreeting);
   }, []);
 
-  return <h1>{greeting} Welcome back! </h1>;
+  return <p>{greeting} </p>;
 };
 
 export default Greeting;
