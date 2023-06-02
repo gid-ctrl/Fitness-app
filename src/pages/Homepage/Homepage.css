@@ -1,0 +1,53 @@
+.hero-banner {
+      background-color: #191919;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+  }
+
+  .hero-content > h3 {
+    font-size: 32px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .hero-content > p {
+    font-size: 24px;
+    margin: 5px 0;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .sweat-text,
+  .smile-text {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    height: 20px;
+    font-weight: 700;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -350px;
+;
+
+  }
+  
+  .image-container img {
+    width: 500px; 
+    height: auto;
+    border-radius: 20%;
+
+
+  }

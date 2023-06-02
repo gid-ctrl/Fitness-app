@@ -1,0 +1,33 @@
+.exercise-button {
+    padding: 10px 20px;
+    background-color: #787474;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .exercise-button:hover {
+    background-color: white;
+  }
+  
+  .selected-exercises {
+    margin-top: 20px;
+  }
+  
+  .selected-exercises h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .selected-exercises ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .selected-exercises li {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }

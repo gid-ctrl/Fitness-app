@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { exerciseSearch, fetchData } from "../../service/fetchData";
 import "../Navbar/Navbar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [search, setSearch] = useState("");
@@ -12,6 +13,7 @@ const NavBar = () => {
         "https://exercisedb.p.rapidapi.com/exercises",
         exerciseSearch
       );
+
       const exercisesSearched = exercisesData.filter(
         (exercise) =>
           exercise.target.toLowerCase().includes(search) ||
@@ -19,6 +21,7 @@ const NavBar = () => {
           exercise.equipment.toLowerCase().includes(search) ||
           exercise.bodyPart.toLowerCase().includes(search)
       );
+      console.log(exercisesSearched);
       setSearch("");
       setExercises(exercisesSearched);
     }
@@ -27,7 +30,9 @@ const NavBar = () => {
     <nav className="navbar">
       <ul>
         <li className="navbar-item">Home</li>
-        <li className="navbar-item">Exercise Selection</li>
+        <li className="navbar-item">
+          <Link to="/exercise-selection">Exercise Selection</Link>
+        </li>
         <li className="navbar-item">Workout Tracking</li>
       </ul>
       <div className="search-container">

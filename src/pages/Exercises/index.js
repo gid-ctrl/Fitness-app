@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../Exercises/Exercises.css";
 
 const ExerciseSelection = () => {
   const [selectedExercises, setSelectedExercises] = useState([]);
@@ -11,24 +12,30 @@ const ExerciseSelection = () => {
     <div>
       <h2>Select Exercises</h2>
       <ul>
-        <li>
-          <button onClick={() => handleExerciseSelect("Running")}>
-            Running
-          </button>
-        </li>
-        <li>
-          <button onClick={() => handleExerciseSelect("Cycling")}>
-            Cycling
-          </button>
-        </li>
+        <button
+          className="exercise-button"
+          onClick={() => handleExerciseSelect("Squats")}
+        >
+          Squats
+        </button>
+        <br />
+        <br />
+        <button
+          className="exercise-button"
+          onClick={() => handleExerciseSelect("Lateral Pull Down")}
+        >
+          Lateral Pull Down
+        </button>
       </ul>
 
-      <h3>Selected Exercises:</h3>
-      <ul>
-        {selectedExercises.map((exercise, index) => (
-          <li key={index}>{exercise}</li>
-        ))}
-      </ul>
+      <div className="selected-exercises">
+        <h3>Selected Exercises:</h3>
+        <ul>
+          {selectedExercises.map((exercise, index) => (
+            <li key={index}>{exercise}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };
